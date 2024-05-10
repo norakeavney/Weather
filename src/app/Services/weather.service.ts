@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 // Weather service to get weather data from the specific coordinates
 export class WeatherService {
+  getCurrentWeather$: any;
   constructor(public http: HttpClient) {}
 
   // Get weather data from the coordinates

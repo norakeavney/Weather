@@ -11,7 +11,6 @@ export interface CurrentWeather {
     timezone: number;
     id: number;
     name: string;
-    cod: number;
 }
 
 export interface Coord {

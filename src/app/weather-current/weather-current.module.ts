@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WeatherCurrentRoutingModule } from './weather-current-routing.module';
+import { WeatherCurrentRoutingModule } from './weather-current-routing.model';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { WeatherCurrentComponent } from './weather-current.component';
