@@ -1,0 +1,16 @@
+ion-item ion-grid ion-card {
+    width: 100%;
+    margin: 0; /* Remove margin */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+ion-item ion-grid ion-card-content {
+    padding: 16px; /* Add padding inside the card content */
+}
+
+/* Optional: Customize card content text and background color */
+ion-item ion-grid ion-card-content {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+}

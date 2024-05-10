@@ -1,0 +1,32 @@
+<ion-tabs (ionTabsDidChange)="ionTabsDidChange($event)">
+    <ion-header>
+      <div class="row">
+        <div class="row__cell row__cell--search">
+          <ion-searchbar inputmode="numeric" placeholder="Zip Code" (search)=onZipCodeChanged() [(ngModel)]="weatherZipCode"></ion-searchbar>
+        </div>
+        <div class="row__cell row__cell--location">
+          <ion-button color="light" (click)="useCurrentGeolocation()">
+            <ion-icon name="locate-outline" size="large"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </ion-header>
+  
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="current">
+        <ion-icon name="partly-sunny"></ion-icon>
+        <ion-label>Current</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="hourly">
+        <ion-icon name="time"></ion-icon>
+        <ion-label>Hourly</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="future">
+        <ion-icon name="paper-plane"></ion-icon>
+        <ion-label>7 Day</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs>
